@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLearn - Gamified Environmental Education</title>
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-seedling"></i>
+                    <span>EcoLearn</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#lessons">Lessons</a></li>
+                    <li><a href="#challenges">Challenges</a></li>
+                    <li><a href="#leaderboard">Leaderboard</a></li>
+                    <li><a href="#rewards">Rewards</a></li>
+                    <li><a href="#dashboard" class="teacher-btn">Teacher Dashboard</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Learn. Act. Save Our Planet.</h1>
+            <p>EcoLearn makes environmental education fun and impactful through gamified learning and real-world challenges.</p>
+            <div class="hero-buttons">
+                <button class="btn primary">Get Started</button>
+                <button class="btn secondary">Watch Demo</button>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <h3>5,000+</h3>
+                    <p>Students Engaged</p>
+                </div>
+                <div class="stat">
+                    <h3>250+</h3>
+                    <p>Schools Participating</p>
+                </div>
+                <div class="stat">
+                    <h3>10,000+</h3>
+                    <p>Trees Planted</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card1">
+                <i class="fas fa-leaf"></i>
+                <p>Climate Change</p>
+            </div>
+            <div class="floating-card card2">
+                <i class="fas fa-recycle"></i>
+                <p>Waste Management</p>
+            </div>
+            <div class="floating-card card3">
+                <i class="fas fa-tree"></i>
+                <p>Biodiversity</p>
+            </div>
+            <div class="planet"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>How EcoLearn Works</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Interactive Lessons</h3>
+                    <p>Engaging modules on climate change, waste management, biodiversity, and sustainable living.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Eco Challenges</h3>
+                    <p>Complete real-world tasks like tree planting, plastic collection, and water conservation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Earn Points & Badges</h3>
+                    <p>Collect eco-points for completed challenges and earn digital badges for your achievements.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Track Progress</h3>
+                    <p>Monitor your environmental impact and see how your actions contribute to a sustainable future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lessons Section -->
+    <section id="lessons" class="lessons">
+        <div class="container">
+            <h2>Interactive Lessons</h2>
+            <p class="section-subtitle">Explore environmental topics through gamified learning modules</p>
+            <div class="lessons-grid">
+                <div class="lesson-card">
+                    <div class="lesson-icon climate">
+                        <i class="fas fa-temperature-high"></i>
+                    </div>
+                    <h3>Climate Change</h3>
+                    <p>Understand the causes and effects of global warming and how to reduce your carbon footprint.</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="65"></div>
+                        <span>65% Complete</span>
+                    </div>
+                    <button class="btn lesson-btn">Continue Lesson</button>
+                </div>
+                <div class="lesson-card">
+                    <div class="lesson-icon waste">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Waste Management</h3>
+                    <p>Learn about recycling, composting, and proper waste segregation techniques.</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="30"></div>
+                        <span>30% Complete</span>
+                    </div>
+                    <button class="btn lesson-btn">Start Lesson</button>
+                </div>
+                <div class="lesson-card">
+                    <div class="lesson-icon biodiversity">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <h3>Biodiversity</h3>
+                    <p>Discover the importance of ecosystems and how to protect endangered species.</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="0"></div>
+                        <span>Not Started</span>
+                    </div>
+                    <button class="btn lesson-btn">Start Lesson</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section id="challenges" class="challenges">
+        <div class="container">
+            <h2>Real-World Eco Challenges</h2>
+            <p class="section-subtitle">Complete tasks in your community and earn eco-points</p>
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <h3>Plant a Tree</h3>
+                        <span class="points">+50 pts</span>
+                    </div>
+                    <p>Plant a native tree species in your neighborhood or school campus.</p>
+                    <div class="challenge-meta">
+                        <span><i class="fas fa-clock"></i> 7 days remaining</span>
+                        <span><i class="fas fa-users"></i> 342 participants</span>
+                    </div>
+                    <button class="btn challenge-btn">Accept Challenge</button>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <h3>Plastic-Free Day</h3>
+                        <span class="points">+30 pts</span>
+                    </div>
+                    <p>Go an entire day without using any single-use plastic items.</p>
+                    <div class="challenge-meta">
+                        <span><i class="fas fa-clock"></i> 3 days remaining</span>
+                        <span><i class="fas fa-users"></i> 521 participants</span>
+                    </div>
+                    <button class="btn challenge-btn">Accept Challenge</button>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <h3>Water Conservation</h3>
+                        <span class="points">+25 pts</span>
+                    </div>
+                    <p>Implement one water-saving technique at home for a week.</p>
+                    <div class="challenge-meta">
+                        <span><i class="fas fa-clock"></i> 5 days remaining</span>
+                        <span><i class="fas fa-users"></i> 278 participants</span>
+                    </div>
+                    <button class="btn challenge-btn">Accept Challenge</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard" class="leaderboard">
+        <div class="container">
+            <h2>EcoLearn Leaderboard</h2>
+            <p class="section-subtitle">Top performers this month</p>
+            <div class="leaderboard-container">
+                <div class="leaderboard-tabs">
+                    <button class="tab-btn active" data-tab="school">School Ranking</button>
+                    <button class="tab-btn" data-tab="student">Student Ranking</button>
+                </div>
+                <div class="leaderboard-content">
+                    <div class="tab-content active" id="school-tab">
+                        <div class="leaderboard-list">
+                            <div class="leaderboard-item first">
+                                <div class="rank">1</div>
+                                <div class="avatar">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Green Valley High School</h4>
+                                    <p>Mumbai, Maharashtra</p>
+                                </div>
+                                <div class="points">4,820 pts</div>
+                            </div>
+                            <div class="leaderboard-item second">
+                                <div class="rank">2</div>
+                                <div class="avatar">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Eco Warriors Academy</h4>
+                                    <p>Bangalore, Karnataka</p>
+                                </div>
+                                <div class="points">4,550 pts</div>
+                            </div>
+                            <div class="leaderboard-item third">
+                                <div class="rank">3</div>
+                                <div class="avatar">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Nature's Friends School</h4>
+                                    <p>Delhi, NCR</p>
+                                </div>
+                                <div class="points">4,210 pts</div>
+                            </div>
+                            <div class="leaderboard-item">
+                                <div class="rank">4</div>
+                                <div class="avatar">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Sustainable Future Institute</h4>
+                                    <p>Chennai, Tamil Nadu</p>
+                                </div>
+                                <div class="points">3,980 pts</div>
+                            </div>
+                            <div class="leaderboard-item">
+                                <div class="rank">5</div>
+                                <div class="avatar">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Earth Guardians College</h4>
+                                    <p>Kolkata, West Bengal</p>
+                                </div>
+                                <div class="points">3,750 pts</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="student-tab">
+                        <div class="leaderboard-list">
+                            <div class="leaderboard-item first">
+                                <div class="rank">1</div>
+                                <div class="avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Priya Sharma</h4>
+                                    <p>Green Valley High School</p>
+                                </div>
+                                <div class="points">620 pts</div>
+                            </div>
+                            <div class="leaderboard-item second">
+                                <div class="rank">2</div>
+                                <div class="avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Rahul Kumar</h4>
+                                    <p>Eco Warriors Academy</p>
+                                </div>
+                                <div class="points">580 pts</div>
+                            </div>
+                            <div class="leaderboard-item third">
+                                <div class="rank">3</div>
+                                <div class="avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Ananya Patel</h4>
+                                    <p>Nature's Friends School</p>
+                                </div>
+                                <div class="points">540 pts</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rewards Section -->
+    <section id="rewards" class="rewards">
+        <div class="container">
+            <h2>Your Eco Rewards</h2>
+            <p class="section-subtitle">Collect badges and certificates for your sustainable actions</p>
+            <div class="rewards-container">
+                <div class="badges-section">
+                    <h3>Earned Badges</h3>
+                    <div class="badges-grid">
+                        <div class="badge earned">
+                            <div class="badge-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <p>Green Starter</p>
+                        </div>
+                        <div class="badge earned">
+                            <div class="badge-icon">
+                                <i class="fas fa-recycle"></i>
+                            </div>
+                            <p>Recycling Pro</p>
+                        </div>
+                        <div class="badge earned">
+                            <div class="badge-icon">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                            <p>Water Saver</p>
+                        </div>
+                        <div class="badge">
+                            <div class="badge-icon">
+                                <i class="fas fa-solar-panel"></i>
+                            </div>
+                            <p>Energy Master</p>
+                        </div>
+                        <div class="badge">
+                            <div class="badge-icon">
+                                <i class="fas fa-tree"></i>
+                            </div>
+                            <p>Forest Guardian</p>
+                        </div>
+                        <div class="badge">
+                            <div class="badge-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <p>Eco Champion</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificates-section">
+                    <h3>Certificates</h3>
+                    <div class="certificates-grid">
+                        <div class="certificate">
+                            <div class="certificate-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h4>Climate Action Certificate</h4>
+                            <p>Completed all climate change modules</p>
+                            <button class="btn certificate-btn">View Certificate</button>
+                        </div>
+                        <div class="certificate locked">
+                            <div class="certificate-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h4>Waste Management Expert</h4>
+                            <p>Complete 5 waste management challenges</p>
+                            <button class="btn certificate-btn" disabled>Locked</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teacher Dashboard Preview -->
+    <section id="dashboard" class="dashboard-preview">
+        <div class="container">
+            <h2>Teacher Dashboard</h2>
+            <p class="section-subtitle">Track student participation, progress, and impact reports</p>
+            <div class="dashboard-cards">
+                <div class="dashboard-card">
+                    <h3>Class Progress</h3>
+                    <div class="progress-chart">
+                        <div class="chart-bar">
+                            <div class="bar-label">Lesson Completion</div>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 75%"></div>
+                            </div>
+                            <div class="bar-value">75%</div>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="bar-label">Challenges Completed</div>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 60%"></div>
+                            </div>
+                            <div class="bar-value">60%</div>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="bar-label">Eco-Points Earned</div>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 82%"></div>
+                            </div>
+                            <div class="bar-value">82%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <h3>Top Students</h3>
+                    <div class="top-students">
+                        <div class="student">
+                            <div class="student-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="student-info">
+                                <h4>Priya Sharma</h4>
+                                <p>620 points</p>
+                            </div>
+                        </div>
+                        <div class="student">
+                            <div class="student-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="student-info">
+                                <h4>Rahul Kumar</h4>
+                                <p>580 points</p>
+                            </div>
+                        </div>
+                        <div class="student">
+                            <div class="student-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="student-info">
+                                <h4>Ananya Patel</h4>
+                                <p>540 points</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <h3>Environmental Impact</h3>
+                    <div class="impact-stats">
+                        <div class="impact-stat">
+                            <i class="fas fa-tree"></i>
+                            <div>
+                                <h4>42 Trees Planted</h4>
+                                <p>Carbon offset: 1,260 kg</p>
+                            </div>
+                        </div>
+                        <div class="impact-stat">
+                            <i class="fas fa-recycle"></i>
+                            <div>
+                                <h4>128 kg Plastic Collected</h4>
+                                <p>Prevented ocean pollution</p>
+                            </div>
+                        </div>
+                        <div class="impact-stat">
+                            <i class="fas fa-tint"></i>
+                            <div>
+                                <h4>5,200 Liters Water Saved</h4>
+                                <p>Equivalent to 26 showers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-cta">
+                <button class="btn primary">Access Full Dashboard</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>EcoLearn</span>
+                    </div>
+                    <p>Making environmental education fun, practical, and impactful for sustainable futures.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#lessons">Lessons</a></li>
+                        <li><a href="#challenges">Challenges</a></li>
+                        <li><a href="#leaderboard">Leaderboard</a></li>
+                        <li><a href="#rewards">Rewards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Lesson Plans</a></li>
+                        <li><a href="#">Teacher Guides</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@ecolearn.com</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mumbai, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 EcoLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LINK -->
+    <script src="script.js"></script>
+</body>
+</html>
