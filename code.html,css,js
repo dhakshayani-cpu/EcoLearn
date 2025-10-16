@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoLearn Quiz Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f2e6;
+      color: #2e8b57;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .quiz-card {
+      background: #fff;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 500px;
+    }
+    .quiz-card button {
+      margin: 5px 0;
+      padding: 10px 15px;
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .quiz-card button:hover {
+      background-color: #246b45;
+    }
+    .score-board {
+      margin-top: 20px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .badge {
+      margin-top: 10px;
+      background-color: gold;
+      color: darkgreen;
+      padding: 8px 12px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌱 EcoLearn Quiz Demo</h1>
+
+  <div class="quiz-card" id="quiz-card">
+    <p id="question">Loading question...</p>
+    <div id="options"></div>
+  </div>
+
+  <div class="score-board">
+    Score: <span id="score">0</span>
+  </div>
+  <div id="badge-container"></div>
+
+  <script>
+    const quizData = [
+      {
+        question: "Which of these is a renewable energy source?",
+        options: ["Coal", "Solar", "Petrol", "Natural Gas"],
+        answer: "Solar"
+      },
+      {
+        question: "What is the most common material for recycling?",
+        options: ["Glass", "Plastic", "Wood", "Stone"],
+        answer: "Plastic"
+      },
+      {
+        question: "Which action saves water?",
+        options: ["Leaving tap running", "Fixing leaks", "Wasting water", "None"],
+        answer: "Fixing leaks"
+      }
+    ];
+
+    let currentQuestion = 0;
+    let score = 0;
+
+    function loadQuestion() {
+      const q = quizData[currentQuestion];
+      document.getElementById("question").innerText = q.question;
+      const optionsDiv = document.getElementById("options");
+      optionsDiv.innerHTML = "";
+      q.options.forEach(option => {
+        const btn = document.createElement("button");
+        btn.innerText = option;
+        btn.onclick = () => checkAnswer(option);
+        optionsDiv.appendChild(btn);
+      });
+    }
+
+    function checkAnswer(selected) {
+      const q = quizData[currentQuestion];
+      if (selected === q.answer) {
+        score += 10;
+        document.getElementById("score").innerText = score;
+      }
+      currentQuestion++;
+      if (currentQuestion < quizData.length) {
+        loadQuestion();
+      } else {
+        showBadge();
+      }
+    }
+
+    function showBadge() {
+      const badgeContainer = document.getElementById("badge-container");
+      badgeContainer.innerHTML = <div class="badge">🌟 Eco Learner Badge Earned! 🌟</div>;
+      document.getElementById("quiz-card").innerHTML = "<p>Quiz Completed! Great job!</p>";
+    }
+
+    loadQuestion();
+  </script>
+
+</body>
+</html>
