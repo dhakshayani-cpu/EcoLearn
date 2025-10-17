@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Demo Student",
+    "email": "student@demo.com",
+    "password": "demo123",
+    "role": "student",
+    "school": "Green Valley High School",
+    "eco_points": 150
+  },
+  {
+    "id": 2,
+    "name": "Demo Teacher",
+    "email": "teacher@demo.com",
+    "password": "demo123",
+    "role": "teacher",
+    "school": "Eco Warriors Academy",
+    "eco_points": 0
+  },
+  {
+    "id": 3,
+    "name": "medha",
+    "email": "medhaa694@gmail.com",
+    "password": "Medha924#",
+    "role": "teacher",
+    "school": "cbit",
+    "eco_points": 0
+  },
+  {
+    "id": 4,
+    "name": "charan",
+    "email": "charangowda044@gmail.com",
+    "password": "@charan8310901744",
+    "role": "student",
+    "school": "Not specified",
+    "eco_points": 0
+  },
+  {
+    "id": 5,
+    "name": "sufiyan",
+    "email": "ayaz84533@gmail.com",
+    "password": "NADIYAJIMERIBAGGOJI0818",
+    "role": "teacher",
+    "school": "AMARA JYOTHI",
+    "eco_points": 0
+  },
+  {
+    "id": 6,
+    "name": "afreen",
+    "email": "afreen283@gmail.com",
+    "password": "malaviika",
+    "role": "student",
+    "school": "garden city",
+    "eco_points": 0
+  },
+  {
+    "id": 7,
+    "name": "malavika",
+    "email": "malavikasmalavika283@gmail.com",
+    "password": "malavik",
+    "role": "student",
+    "school": "cbit",
+    "eco_points": 0
+  },
+  {
+    "id": 8,
+    "name": "afreen",
+    "email": "afreen3@gmail.com",
+    "password": "dhffvvggvgfff",
+    "role": "student",
+    "school": "garden city",
+    "eco_points": 0
+  }
+]
